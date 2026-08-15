@@ -1,0 +1,4 @@
+# qvl-vision bundle patch layer: mounts the Host row.
+- insert:
+    - id: qvl-vision
+      name: '@dsh-external/qvl-vision'
