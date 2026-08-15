@@ -7,20 +7,24 @@
   "type": "module",
   "main": "lib/index.mjs",
   "exports": {
-    ".": { "default": "./lib/index.mjs" },
+    ".": {
+      "default": "./lib/index.mjs"
+    },
     "./client": "./lib/index.js",
     "./cordis.patch.yml": "./cordis.patch.yml",
     "./package.json": "./package.json"
   },
   "dsh": {
-    "bundle": { "patch": "./cordis.patch.yml" },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
-      "inject": ["@deepseek-ai/dsh-client-runtime", "@deepseek-ai/dsh-client-ui-slots"],
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ],
       "platform": "web"
     }
-  },
-  "dependencies": {
-    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6"
   },
   "peerDependencies": {
     "@deepseek-ai/dsh-tools": "^0.1.0-rc.6",
